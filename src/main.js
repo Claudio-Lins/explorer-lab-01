@@ -103,22 +103,6 @@ cardHolder.addEventListener("input", function (event) {
     : (cardHolderName.textContent = cardHolder.value.toUpperCase())
 })
 
-// const cardHolderNumber = document.querySelector("#card-number")
-// cardHolderNumber.addEventListener("input", function (event) {
-//   const ccNumber = document.querySelector(".cc-info .cc-number")
-//   cardHolderNumber.value.length === 0
-//     ? (ccNumber.textContent = "0000 0000 0000 0000")
-//     : (ccNumber.textContent = cardHolderNumber.value)
-// })
-
-// const inputExpirationDate = document.querySelector("#expiration-date")
-// inputExpirationDate.addEventListener("input", (e) => {
-//   const ccExpirationDate = document.querySelector(".cc-expiration .value")
-//   inputExpirationDate.value.length === 0
-//     ? (ccExpirationDate.textContent = "02/32")
-//     : (ccExpirationDate.textContent = inputExpirationDate.value)
-// })
-
 maskCardNumber.on("accept", () => {
   updateCardNumber(maskCardNumber.value)
 })
